@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Mania</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="social-icons">
+    <a href="https://facebook.com" target="_blank"><img src="./icons/fb.jpg" alt="Facebook" class="social-icon"></a>
+    <a href="https://instagram.com" target="_blank"><img src="./icons/inst.jpg" alt="Instagram" class="social-icon"></a>
+    <a href="https://youtube.com" target="_blank"><img src="./icons/you.jpg" alt="YouTube" class="social-icon"></a>
+  </div>
+ <div class="hero">
+  <div class="explore-section">
+    <h1 class="explore-title">EXPLORE DREAM DESTINATION</h1>
+  </div>
+  <div class="motivation-section">
+    <p class="motivation-text">
+      Discover breathtaking locations like Timberlane Lodge. Embrace the journey and create unforgettable memories.
+    </p>
+  </div>
+  <button class="book-tour" onclick="location.href='./contact.html'">Book a Tour</button>
+</div>
+  <nav>
+    <ul>
+      <li><img src="./icons/logo.jpeg" alt="Airplane Icon" class="nav-icon"></li>
+      <li><h1>Travel Mania</h1></li>
+      <li><a href="./index.html" id="home">Home</a></li>
+      <li><a href="./aboutUs.html" id="about">About Us</a></li>
+      <li><a href="./contact.html" id="contact">Contact Us</a></li>
+      <li>
+        <input type="text" id="conditionInput" placeholder="Enter a destination or keyword">
+      </li>
+      <li><button id='btnSearch'>Search</button></li>
+      <li><button id='btnClear'>Clear</button></li>
+    </ul>
+  </nav>
+<script src="./travel_recommendation.js" defer></script>
+
+</body>
+</html>
