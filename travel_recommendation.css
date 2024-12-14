@@ -1,0 +1,162 @@
+/* Global styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation bar styles */
+nav {
+    background-color: #333; /* Dark grey background */
+    padding: 10px 20px;
+    position: fixed; /* Keeps the nav bar fixed at the top */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+nav a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+.nav-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+/* Background and content-wrapper styles */
+body {
+    background: url('./background.jpeg') no-repeat center center fixed; /* Same background as homepage */
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    color: white; /* White text for better readability */
+}
+
+.content-wrapper {
+    margin-top: 80px; /* Ensures content starts below the fixed navigation bar */
+    padding: 20px;
+}
+
+/* Section styles */
+.section {
+    border: 3px solid red; /* Red border for the rectangles */
+    padding: 20px;
+    margin-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background for better readability */
+    border-radius: 10px;
+    max-width: 80%; /* Prevents sections from spanning too wide */
+    margin-left: auto;
+    margin-right: auto; /* Centers the section horizontally */
+}
+
+/* Team member styles */
+.team-member {
+    margin-bottom: 20px; /* Space between team members */
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Headings */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Explore section styles */
+.explore-section {
+    border: 3px solid red; /* Red border for the rectangle */
+    display: flex; /* Adjusts size dynamically to content */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    text-align: center;
+    padding: 20px; /* Adds spacing around the content */
+    width: 280px; /* Fixed width for the rectangle */
+    height: 170px; /* Fixed height for the rectangle */
+    box-sizing: border-box; /* Includes border in sizing */
+    margin-bottom: 35px; /* Space below the rectangle */
+}
+
+/* Explore title styles */
+.explore-title {
+    font-size: calc(3vw + 3vh); /* Dynamically adjust font size to fill rectangle */
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+    line-height: 1.2; /* Adjusts spacing for multi-line content */
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+/* Motivation section styles */
+.motivation-section {
+    border: 3px solid red; /* Red border for the rectangle */
+    padding: 20px; /* Adds spacing inside the rectangle */
+    margin-top: 35px; /* Space below the explore rectangle */
+    text-align: center; /* Centers text horizontally */
+    width: 350px; /* Larger width for motivational text */
+    box-sizing: border-box; /* Includes border in width */
+    margin-left: auto;
+    margin-right: auto; /* Centers the rectangle */
+}
+
+/* Motivation text */
+.motivation-text {
+    font-size: 1.2rem; /* Font size for motivational text */
+    line-height: 1.6; /* Line spacing for readability */
+    color: white;
+    margin: 0;
+}
+
+/* Book a Tour button */
+.book-tour {
+    padding: 8px 16px; /* Consistent padding */
+    font-size: 1.2rem; /* Slightly larger font size */
+    font-weight: bold;
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #575757; /* Grey background */
+    color: white; /* White font color */
+    cursor: pointer;
+    text-transform: uppercase;
+    display: block; /* Ensures it occupies its own line */
+    margin: 35px auto 0 auto; /* Centers button in its container */
+}
+
+.book-tour:hover {
+    background-color: #777; /* Lighter grey on hover */
+}
